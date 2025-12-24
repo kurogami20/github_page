@@ -2,27 +2,32 @@ const tab = [
   {
     title: "Easy",
     content:
-      "Github Pages is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Github Pages is a very easy to use static site hosting service that allows you to create and publish websites directly from your GitHub repositories.",
   },
   {
     title: "Faster",
     content:
-      "Github Pages is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Github Pages is a very fast way to host your static websites with minimal setup and configuration required.",
   },
   {
     title: "Reliable",
     content:
-      "Github Pages is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Github Pages is a very reliable service that ensures your website is always available and accessible to your users.",
   },
   {
     title: "Secure",
     content:
-      "Github Pages is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Github Pages is a very secure service that protects your website from unauthorized access and potential threats.",
   },
   {
     title: "Free",
     content:
-      "Github Pages is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Github Pages is a free service that allows you to host your static websites without any cost.",
+  },
+  {
+    title: "Customizable",
+    content:
+      "Github Pages is a customizable service that allows you to create your deploy script according to your needs.",
   },
 ];
 
