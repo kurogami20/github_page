@@ -1,31 +1,31 @@
 const tab = [
   {
-    title: "Easy",
+    title: 'Easy <i class="fa-solid fa-thumbs-up"></i>',
     content:
       "Github Pages is a very easy to use static site hosting service that allows you to create and publish websites directly from your GitHub repositories.",
   },
   {
-    title: "Faster",
+    title: 'Fast <i class="fa-solid fa-forward"></i>',
     content:
       "Github Pages is a very fast way to host your static websites with minimal setup and configuration required.",
   },
   {
-    title: "Reliable",
+    title: 'Reliable <i class="fa-solid fa-handshake"></i>',
     content:
       "Github Pages is a very reliable service that ensures your website is always available and accessible to your users.",
   },
   {
-    title: "Secure",
+    title: 'Secure <i class="fa-solid fa-shield"></i>',
     content:
       "Github Pages is a very secure service that protects your website from unauthorized access and potential threats.",
   },
   {
-    title: "Free",
+    title: 'Free <i class="fa-solid fa-coins"></i>',
     content:
       "Github Pages is a free service that allows you to host your static websites without any cost.",
   },
   {
-    title: "Customizable",
+    title: 'Customizable <i class="fa-solid fa-gears"></i>',
     content:
       "Github Pages is a customizable service that allows you to create your deploy script according to your needs.",
   },
@@ -56,7 +56,7 @@ const app = {
     const contentElm = tabFragmElm.querySelector('[slot="content_card"]');
 
     // * je modifie les éléments avec les données
-    titleElm.textContent = tabs.title;
+    titleElm.innerHTML = tabs.title;
     contentElm.textContent = tabs.content;
 
     return tabFragmElm;
