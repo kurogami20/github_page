@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Pages</title>
+    <title>Github Pages -- Home</title>
     <meta
       name="description"
       content="Discover the advantages of using Github Pages for hosting your static websites. Learn about its ease of use, speed, reliability, security, and cost-effectiveness."
@@ -58,7 +58,7 @@
       </header>
       <!-- hero -->
       <div class="max-w-full min-h-screen">
-        <div class="hero mt-15">
+        <div class="hero mt-15 h-full">
           <div class="hero-content pt-0 text-center flex flex-col gap-4">
             <img
               src="./public/images/SVG/Fichier 1.svg"
@@ -79,18 +79,46 @@
           </div>
         </div>
       </div>
-      <main class="main max-mx-10 lg:mx-auto px-4 w-full mb-10">
-        <section class="advantages_section m-auto">
-          <h2 class="text-xl lg:text-3xl font-bold text-center mb-10">
+      <!-- main -->
+      <main class="main max-mx-10 lg:mx-auto px-4 w-full mb-15">
+        <section
+          class="advantages_section m-auto flex flex-col gap-8 items-center"
+        >
+          <h2 class="text-xl lg:text-3xl font-bold text-center mb-15">
             Why Github Pages ?
           </h2>
           <div
             id="tabs"
             class="grid grid-cols-1 lg:gap-4 lg:grid-cols-2 2xl:grid-cols-3 justify-center gap-8 m-auto"
           ></div>
+
+          <button
+            id="action_started"
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-fit btn-outline btn-warning"
+          >
+            Let's get started
+          </button>
         </section>
       </main>
-      <footer></footer>
+      <footer
+        class="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
+      >
+        <aside>
+          <a class="text-xl lg:text-3xl font-bold" href="/"
+            ><i class="fa-brands fa-github"></i> Github Pages</a
+          >
+        </aside>
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover link-warning">Documentation</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover link-warning">Terms of use</a>
+          <a class="link link-hover link-warning">Privacy policy</a>
+          <a class="link link-hover link-warning">Cookie policy</a>
+        </nav>
+      </footer>
     </div>
   </body>
 
