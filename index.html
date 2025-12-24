@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <div class="container">
+  <body class="">
+    <div class="max-w-full m-auto">
       <header class="w-screen">
         <div
           class="navbar bg-base-100 shadow-sm sticky top-0 left-0 right-0 z-10"
@@ -30,18 +30,22 @@
           >
         </div>
       </header>
-      <main class="main mx-10 lg:mx-50 m-auto px-4 w-[100%]">
+      <main class="main mx-10 lg:mx-auto px-4 w-full py-10">
         <section
           id="tabs"
-          class="advantages_section grid grid-cols-1 lg:grid-cols-3 gap-4 m-auto m-10"
+          class="advantages_section grid grid-cols-1 lg:grid-cols-3 lg:justify-center gap-4 m-auto"
         ></section>
       </main>
       <footer></footer>
     </div>
   </body>
+
   <!-- templates -->
+
   <template id="card_template">
-    <div class="card card-border bg-base-100 w-96">
+    <div
+      class="card card-border border-base-300 bg-base-100 w-120 hover:shadow-lg mx-auto"
+    >
       <div class="card-body">
         <h2 class="card-title" slot="title_card"></h2>
         <p slot="content_card"></p>
