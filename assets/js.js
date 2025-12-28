@@ -26,8 +26,8 @@ const layoutApp = {
     // *je vais récupérer le paramètre de l'url
     const urlParams = new URLSearchParams(window.location.search);
     const page = urlParams.get("page");
-    const pageName = "";
-    const pageDescription = "";
+    let pageName = "";
+    let pageDescription = "";
 
     if (page === "documentation") {
       pageName = "Documentation";
