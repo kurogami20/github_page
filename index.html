@@ -49,13 +49,7 @@
   </head>
   <body class="font-sans">
     <div class="max-w-full m-auto">
-      <header class="max-w-screen sticky top-0 left-0 right-0 z-10">
-        <div class="navbar bg-base-100 shadow-sm w-full px-10 lg:px-20">
-          <a class="text-xl lg:text-3xl font-bold" href="/"
-            ><i class="fa-brands fa-github"></i> Github Pages</a
-          >
-        </div>
-      </header>
+      <header></header>
       <!-- hero -->
       <div class="max-w-full min-h-screen">
         <div class="hero mt-15 h-full">
@@ -100,25 +94,7 @@
           </button>
         </section>
       </main>
-      <footer
-        class="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
-      >
-        <aside>
-          <a class="text-xl lg:text-3xl font-bold" href="/"
-            ><i class="fa-brands fa-github"></i> Github Pages</a
-          >
-        </aside>
-        <nav>
-          <h6 class="footer-title">Services</h6>
-          <a class="link link-hover link-warning">Documentation</a>
-        </nav>
-        <nav>
-          <h6 class="footer-title">Legal</h6>
-          <a class="link link-hover link-warning">Terms of use</a>
-          <a class="link link-hover link-warning">Privacy policy</a>
-          <a class="link link-hover link-warning">Cookie policy</a>
-        </nav>
-      </footer>
+      <footer></footer>
     </div>
   </body>
 
@@ -136,4 +112,8 @@
   </template>
   <!-- script -->
   <script src="./assets/js.js"></script>
+  <script>
+    const url = window.location.href;
+    console.log(url);
+  </script>
 </html>
