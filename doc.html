@@ -51,7 +51,22 @@
     <div class="max-w-full m-auto">
       <header></header>
       <!-- main -->
-      <main class="main max-mx-10 lg:mx-auto px-4 w-full mb-15"></main>
+      <main class="main max-mx-10 lg:mx-auto px-4 w-full mb-15 relative">
+        <ul
+          class="menu bg-base-200 rounded-box w-56 h-full absolute z-9 left-0 top-0"
+        >
+          <li><a>Quick Start</a></li>
+          <li>
+            <details>
+              <summary class="menu-dropdown-toggle">Github Actions</summary>
+              <ul class="menu-dropdown">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </main>
       <footer></footer>
     </div>
   </body>
