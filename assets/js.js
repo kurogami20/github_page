@@ -15,78 +15,13 @@ const navApp = {
 };
 navApp.init();
 
-// *layout (header, footer + head)
+// *layout (header, footer)
 const layoutApp = {
   init() {
-    layoutApp.head();
     layoutApp.header();
     layoutApp.footer();
   },
-  head() {
-    // *je vais récupérer le paramètre de l'url
-    const urlParams = new URLSearchParams(window.location.search);
-    const page = urlParams.get("page");
-    let pageName = "";
-    let pageDescription = "";
 
-    if (page === "documentation") {
-      pageName = "Documentation";
-      pageDescription =
-        "Find all the information you need to get started with Github Pages, including how to create and publish your own static websites using GitHub repositories.";
-    } else {
-      pageName = "Home";
-      pageDescription =
-        "Github Pages is a static site hosting service that allows you to create and publish websites directly from your GitHub repositories. Learn more about its features and benefits.";
-    }
-    // * je vais récupérer la balise head
-    const headElm = document.querySelector("head");
-    // * je vais ajouter le contenu du head
-    headElm.innerHTML += `<meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Pages -- ${pageName}</title>
-    <meta
-      name="description"
-      content="${pageDescription}"
-    />
-    <link
-      rel="shortcut icon"
-      href="./public/images/logo.svg"
-      type="image/x-icon"
-    />
-    <meta property="og:title" content="Github Pages -- ${pageName}" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://kurogami20.github.io/github_page/"
-    />
-    <meta
-      property="og:image"
-      content="https://kurogami20.github.io/github_page/public/images/logo.svg"
-    />
-    <meta
-      property="og:description"
-      content="${pageDescription}"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@3/dist/tailwind.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />`;
-  },
   header() {
     // * je vais récupérer la balise header
     const headerElm = document.querySelector("header");
@@ -186,7 +121,7 @@ const cardHome = {
     // * je crée mes cards à partir de mon tableau tab
     // 'map' sert à transformer un tableau en un autre tableau
     // et va ainsi itérer sur chaque élément du tableau tab
-    const cards = tab.map((tabs) => app.createTabElm(tabs));
+    const cards = tab.map((tabs) => cardHome.createTabElm(tabs));
     // * j'insère mes cards dans le container
     // '...cards' permet de décomposer le tableau cards en éléments individuels et tous les insérer en une seule fois
     tabsContainer.append(...cards);
