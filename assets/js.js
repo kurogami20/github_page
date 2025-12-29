@@ -1,20 +1,3 @@
-// *navigation
-const navApp = {
-  init() {
-    navApp.handleNav();
-  },
-  handleNav() {
-    // *je récupère le paramètre de l'url
-    const urlParams = new URLSearchParams(window.location.search);
-    const page = urlParams.get("page");
-    if (page === "documentation") {
-      // * je redirige sur la page documentation doc.html
-      window.location.href = "./doc.html";
-    }
-  },
-};
-navApp.init();
-
 // *layout (header, footer)
 const layoutApp = {
   init() {
@@ -35,7 +18,7 @@ const layoutApp = {
           <div class="flex-none">
             <ul class="menu menu-horizontal px-1">
               <li class="text-lg lg:text-xl">
-                <a href="/?page=documentation" class="hover:bg-white">Documentation</a>
+                <a href="/doc.html" class="hover:bg-white">Documentation</a>
               </li>
             </ul>
           </div>

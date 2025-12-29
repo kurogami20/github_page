@@ -51,11 +51,16 @@
     <div class="max-w-full m-auto">
       <header></header>
       <!-- main -->
-      <main class="main max-mx-10 lg:mx-auto px-4 w-full mb-15 relative">
+      <main class="main max-mx-10 lg:mx-auto px-4 w-full relative flex">
+        <!-- sidemenu -->
         <ul
-          class="menu bg-base-200 rounded-box w-56 h-full absolute z-9 left-0 top-0"
+          class="menu bg-base-200 w-56 h-full absolute z-9 left-0 top-0 flex flex-col gap-2"
         >
-          <li><a>Quick Start</a></li>
+          <li>
+            <a href="#" id="quickstart_menu" class="active:bg-red!"
+              >Quick Start</a
+            >
+          </li>
           <li>
             <details>
               <summary class="menu-dropdown-toggle">Github Actions</summary>
@@ -66,9 +71,22 @@
             </details>
           </li>
         </ul>
+        <!-- content -->
+        <section
+          id="quickstart"
+          class="content flex flex-col gap-8 ml-60 mt-10 mb-20 w-full"
+        >
+          <h2 slot="doc_title" class="text-xl lg:text-3xl font-bold mb-15">
+            Quick Start
+          </h2>
+          <div>
+            <p></p>
+          </div>
+        </section>
       </main>
       <footer></footer>
     </div>
   </body>
   <script src="./assets/js.js"></script>
+  <script src="./assets/doc.js"></script>
 </html>
