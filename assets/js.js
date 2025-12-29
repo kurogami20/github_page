@@ -23,6 +23,7 @@ const layoutApp = {
             </ul>
           </div>
         </div>`;
+    // * je vais ajouter des classes tailwindcss à la balise header
     headerElm.classList.add(
       "max-w-screen",
       "sticky",

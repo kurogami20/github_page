@@ -8,7 +8,7 @@ const tab = [
   {
     title: 'Fast <i class="fa-solid fa-forward"></i>',
     content:
-      "Github Pages is a very fast way to host your static websites with minimal setup and configuration required.",
+      "Github Pages is a very fast service that allows you to deploy your static websites in just a few minutes.",
   },
   {
     title: 'Reliable <i class="fa-solid fa-handshake"></i>',
